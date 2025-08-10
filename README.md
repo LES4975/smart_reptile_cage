@@ -8,6 +8,9 @@ STM32으로 DHT11과 LCD, DC팬, 가습기 모듈을 제어함.
 
 ![스마트 파충류 사육장](./cage.png)
 
+### System Architecture
+![시스템 구성도](./architecture_cage.png)
+
 ### Flow Chart
 
-
+![플로우차트](./flowchart_cage.png)
