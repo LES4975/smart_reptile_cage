@@ -8,9 +8,25 @@ STM32으로 DHT11과 LCD, DC팬, 가습기 모듈을 제어함.
 
 ![스마트 파충류 사육장](./cage.png)
 
-### System Architecture
+## System Architecture
 ![시스템 구성도](./architecture_cage.png)
 
-### Flow Chart
+## Flow Chart
 
 ![플로우차트](./flowchart_cage.png)
+
+## 사용한 기술
+
+- **STM32**
+    - 온습도 센서(DHT11): GPIO, 타이머
+    - 블루투스 모듈(HC-05): UART 통신
+    - DC팬: GPIO
+    - 가습기 모듈
+    - LED: GPIO
+    - LCD: I2C 통신
+- **라즈베리파이**
+    - 블루투스 송수신(소켓 통신)
+    - MySQL DB 접속 및 관리
+- **MySQL**: 온습도 데이터 저장용 데이터베이스
+- **`matplotlib` 라이브러리**: 온습도 데이터를 plot 형태로 표시한다.
+- **PyQt**: GUI 구성, 온습도 추이를 실시간 그래프로 확인, 실시간 온습도 제어
